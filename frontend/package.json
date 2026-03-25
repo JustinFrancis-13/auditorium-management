@@ -1,0 +1,45 @@
+{
+  "name": "auditorium-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.5.0",
+    "date-fns": "^2.30.0",
+    "lucide-react": "^0.383.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.18.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.16.0",
+    "recharts": "^2.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src --ext .js,.jsx"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "build"
+  ],
+  "devDependencies": {
+    "ajv": "^8.18.0",
+    "ajv-keywords": "^5.1.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "react-scripts": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

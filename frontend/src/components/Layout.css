@@ -1,0 +1,32 @@
+.layout { display: flex; height: 100vh; overflow: hidden; }
+.sidebar { width: 260px; background: var(--primary); color: #fff; display: flex; flex-direction: column; transition: width 0.3s ease; overflow: hidden; flex-shrink: 0; }
+.sidebar.collapsed { width: 70px; }
+.sidebar-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 16px; border-bottom: 1px solid rgba(255,255,255,0.1); min-height: 72px; }
+.logo { display: flex; align-items: center; gap: 12px; overflow: hidden; }
+.logo-icon { width: 40px; height: 40px; background: var(--gold); color: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 15px; flex-shrink: 0; }
+.logo-text { display: flex; flex-direction: column; }
+.logo-title { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.logo-sub { font-size: 11px; opacity: 0.7; white-space: nowrap; }
+.sidebar-toggle { background: rgba(255,255,255,0.12); border: none; color: #fff; padding: 6px; border-radius: 8px; cursor: pointer; flex-shrink: 0; }
+.sidebar-nav { flex: 1; padding: 16px 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; }
+.nav-item { display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: rgba(255,255,255,0.75); transition: all 0.2s; white-space: nowrap; font-size: 14px; font-weight: 500; border: none; background: none; width: 100%; text-align: left; }
+.nav-item:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.nav-item.active { background: rgba(255,255,255,0.18); color: #fff; }
+.nav-icon { flex-shrink: 0; }
+.sidebar-footer { padding: 12px 10px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 4px; }
+.logout-btn { color: rgba(255,100,100,0.85); }
+.logout-btn:hover { background: rgba(255,100,100,0.15); color: #ff6b6b; }
+.main-container { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.topbar { background: var(--card); border-bottom: 1px solid var(--border); padding: 0 28px; height: 64px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(26,35,126,0.06); flex-shrink: 0; }
+.topbar-left { display: flex; align-items: center; gap: 14px; }
+.page-greeting { font-size: 18px; font-weight: 600; color: var(--text); font-family: 'Playfair Display', serif; }
+.role-badge { background: var(--primary); color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 20px; text-transform: capitalize; font-weight: 600; }
+.topbar-right { display: flex; align-items: center; gap: 12px; }
+.icon-btn { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 8px; color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; }
+.user-dropdown { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 6px 12px; border-radius: 10px; background: var(--bg); border: 1px solid var(--border); position: relative; }
+.user-avatar { width: 32px; height: 32px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+.user-name { font-size: 14px; font-weight: 500; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dropdown-menu { position: absolute; top: calc(100% + 8px); right: 0; background: #fff; border: 1px solid var(--border); border-radius: 10px; box-shadow: var(--shadow-lg); min-width: 160px; overflow: hidden; z-index: 100; }
+.dropdown-item { display: block; padding: 10px 16px; font-size: 14px; color: var(--text); width: 100%; text-align: left; background: none; border: none; cursor: pointer; }
+.dropdown-item:hover { background: var(--bg); }
+.main-content { flex: 1; overflow-y: auto; padding: 28px; }
